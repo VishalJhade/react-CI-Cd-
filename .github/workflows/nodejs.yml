@@ -18,13 +18,16 @@ jobs:
 
       - name: "Check Node.js version"
         run: node -v
-
+             
       - name: "check directories"
-        run: ls
-
+        run: |
+          ls
+          cd my-react-app
+          ls
+          
       - name: "install dipendencies"
         run: npm install
-
+          
       - name: "check directories"
         run : ls
         
