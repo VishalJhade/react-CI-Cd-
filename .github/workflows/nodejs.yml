@@ -1,0 +1,16 @@
+name: "node js setup workflow"
+
+on:
+    push:
+
+jobs:
+    node:
+        runs-on: ubuntu-latest
+    steps:
+        -name: "nodejs setup"
+        uses: actions/setup-node@4
+        with:
+             node-version: '21'
+        -name: "Check node version"
+        run: node -v
+        
